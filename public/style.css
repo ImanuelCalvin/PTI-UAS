@@ -1,0 +1,369 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {  }
+
+
+@media (min-width: 992px) { }
+
+
+@media (min-width: 1200px) { }
+
+
+
+body {
+    background-color: white;
+}
+
+@font-face {
+    font-family: poppins-black;
+    src: url(./Poppins-Black.ttf);
+}
+
+
+
+header{
+    color: white;
+    background-color: #1C5DDC;
+    font-family: poppins-black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.header h1{
+    padding-top: 5px;
+    margin-bottom: -0.5px;
+}
+
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity for the darkening effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .text {
+    color: white;
+    font-size: 2em; /* Adjust font size as needed */
+    text-align: center;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.text h1{
+    font-family: poppins-black;
+    font-size: 6vw;
+}
+
+.text p{
+    margin-top: -2.5vh;
+    font-size: 2vw;
+    font-family: poppins-black  ;
+}
+
+
+.navigation a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    transition: 0.4s;
+}
+
+.navigation a:hover, 
+.navigation a.active{
+    background: #FEB52B;
+    color: white;
+}
+
+.section{
+    font-family: poppins-black;
+    text-align: center;
+    padding: 150px;
+    width: 100%;
+    height: 110vh;
+}
+
+.section img{
+    padding-bottom: 5vh;
+}
+.section h1{
+    font-size: 8vh;
+    padding-bottom: 1vh;
+}
+
+.section p{
+    font-size: 1.5em;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.tarian{
+    background-color: #FEB52B;
+    width: 100%;
+    height: 110vh;
+    padding: 150px;
+    font-family: poppins-black;
+    color: white;
+}
+
+.tarian h1{
+    font-size: 5em;
+    text-align: center;
+}
+
+.tarian iframe {
+    display: block;
+    margin: 0 auto; /* Center the video horizontally */
+}
+
+.tarian a{
+    display: block;
+    margin-top: 50px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 23px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.tarian a:hover{
+    background-color: #19AE5D;
+    color:white;
+}
+
+.makanan{
+    color: white;
+    font-family: poppins-black;
+    padding: 150px;
+    width: 100%;
+    height: 90vh;
+    background-color: #19AE5D;
+}
+
+.makanan h1{
+    font-size: 3vw;
+    text-align: center;
+}
+
+
+
+.gambar_makanan {
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Add space between the images */
+}
+
+.gambar_makanan img {
+    max-width: 100%; /* Ensure images do not overflow the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.gambar_makanan img:hover {
+    transform: scale(1.05); /* Slightly scale up the image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.image-container {
+    position: relative;
+    width: 150vw; /* Set a fixed width for the images */
+    overflow: hidden; /* Ensure child elements do not overflow the container */
+}
+
+.image-container img {
+    width: 100vw; /* Make sure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.image-container .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white;
+    visibility: hidden; /* Initially hide the overlay text */
+    opacity: 0; /* Initially make the overlay text fully transparent */
+    text-align: center;
+    padding: 10px;
+    transition: visibility 0s, opacity 0.3s ease; /* Smooth transition for visibility and opacity */
+}
+
+.image-container:hover img {
+    transform: scale(1.05); /* Slightly scale up the image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.image-container:hover .overlay {
+    visibility: visible; /* Make the overlay text visible on hover */
+    opacity: 1; /* Make the overlay text fully opaque on hover */
+}
+
+
+.makanan {
+    text-align: center;
+}
+
+.gambar_makanan {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Add space between items */
+}
+
+.image-container {
+    position: relative;
+    width: 300px; /* Set width for each image container */
+    overflow: hidden; /* Hide overflow content */
+    margin-bottom: 20px; /* Add margin below each image */
+}
+
+
+
+.image-container:hover figcaption {
+    visibility: visible; /* Show on hover */
+    opacity: 1; /* Fully visible on hover */
+}
+
+.makanan p{
+    font-size: 1vw;
+}
+
+footer{
+    font-size: 2vw;
+    padding-top: 15px;
+    color: white;
+    font-family: poppins-black;
+    text-align: center;
+    background: #1C5DDC;
+    height: 8vh;
+}
+
+.weatherForm {
+    margin-top: -15px;
+    background-color: #1C5DDC;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan form */
+}
+
+.cityInput {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 20%, 0.3); /* Perbaikan properti warna */
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px; /* Perbaikan penulisan padding */
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: hsl(122, 39%, 50%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px; /* Tambahkan margin atas untuk memberi jarak tambahan */
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(122, 39%, 40%);
+}
+
+.card {
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Tambahkan margin atas untuk memberi jarak dari form */
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.cityDisplay, .tempDisplay {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+}
+
+.humidityDisplay {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.descDisplay {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.weatherEmoji {
+    margin: 0;
+    font-size: 7.5rem;
+}
+
+.errorDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+}
+
+
+

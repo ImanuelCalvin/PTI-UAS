@@ -1,0 +1,101 @@
+@font-face {
+    font-family: poppins-black;
+    src: url(./Poppins-Black.ttf);
+}
+
+#card-area{    
+    padding-left: 15vw;
+    margin-right: -5vh;
+    height: 120vh;
+    width: 100%;
+    display: block;
+    gap: 4vmin;
+    position: absolute;
+    background: #FEB52B;
+    padding: 110px;
+    transition: background-color 1s ease;
+    color: white; 
+}
+
+.wrapper{
+    padding: 10px 10%;
+}
+
+
+.greet{
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: -20px;
+    font-family: poppins-black ;
+}
+
+.box-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Set 3 columns with equal width */
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5) ;
+}
+
+.box img{
+    width: 110%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.5s;
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 70%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-family: poppins-black;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.overlay a{
+    font-family: poppins-black;
+    margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.box:hover img{
+    transform: scale(1.2);
+}
+
+.box:hover .overlay{
+    height: 100%;
+}
